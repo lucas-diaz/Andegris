@@ -55,10 +55,12 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
     "react-redux": "*",
+    "react-router-dom": "^5.2.0",
     "redux": "*",
     "styled-components": "*"
   }
