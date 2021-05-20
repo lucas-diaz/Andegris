@@ -10,13 +10,13 @@ const Header = ({ openMenu, actionOpenMenu }) => (
   <header className="header">
     <h1>Andegris</h1>
     {/* nav mobile */}
-      <div className="icon" onClick={actionOpenMenu}>Icon</div>
+    <div className="icon" onClick={actionOpenMenu}>Icon</div>
 
     {/* nav ecran */}
     <nav className={`navbar ${openMenu ? "responsive" : ""}`}>
       <ul className="navbar-nav">
         <Link to="/inscription"><li className="navbar-li">{openMenu}Inscription</li></Link>
-        <Link to="/connexion"><li className="navbar-li">Connexion</li></Link>
+        <Link to="/connexion"><li className="navbar-li border">Connexion</li></Link>
       </ul>
     </nav>
   </header>
