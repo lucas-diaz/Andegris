@@ -3,7 +3,7 @@ import React from 'react';
 
 // == Import
 import Counter from 'src/containers/Counter';
-import Header from '../Header';
+import Header from '../../containers/header';
 import reactLogo from './react-logo.svg';
 import './styles.css';
 

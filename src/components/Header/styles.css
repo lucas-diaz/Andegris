@@ -1,11 +1,54 @@
 .header {
   display: flex;
+  align-items: center;
   border: 1px black solid ;
   height: 110px;
 }
 
 h1 {
   font-size: 1.4rem;
+}
+
+.navbar-nav{
+  display: flex;
+}
+
+.navbar-li{
+  margin: 0 10px;
+}
+
+
+
+
+@media (min-width: 1001px) { 
+  .icon{
+    display: none;
+  }
+
+  
+}
+
+@media (max-width: 1000px) { 
+  .navbar{
+    display: none;
+  }
+  .responsive{
+    display: block;
+    background-color: aqua;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .icon{
+    margin-left: 10px; 
+    position: absolute;
+  }
+  
+  h1{
+    margin: auto;
+  }
 }
 
 
