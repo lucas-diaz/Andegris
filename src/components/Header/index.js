@@ -8,7 +8,7 @@ import './styles.css';
 // == Composant
 const Header = ({ openMenu, actionOpenMenu }) => (
   <header className="header">
-    <h1>Andegris</h1>
+    <Link to="/"><h1>Andegris</h1></Link>
     {/* nav mobile */}
     <div className="icon" onClick={actionOpenMenu}>Icon</div>
 
