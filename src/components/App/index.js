@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom';
 import Counter from 'src/containers/Counter';
 import Header from '../../containers/header';
 import Home from '../../containers/home';
-import Connect from '../../containers/connect';
+import Connect from '../../containers/log';
 import reactLogo from './react-logo.svg';
 import './styles.css';
 
