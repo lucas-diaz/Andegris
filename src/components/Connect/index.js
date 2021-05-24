@@ -14,15 +14,15 @@ const Connexion = ({ }) => (
         <button className="select-button">Inscription</button>
       </div>
       <form>
-        <div className="userName">
-          <label>nom d'utilisateur</label>
-          <input type="text" id="name" required></input>
+        <div className="userName input">
+          <label className="input-label">EMAIL</label>
+          <input className="input-text" type="text" id="name" required></input>
         </div>
-        <div className="password">
-          <label>password</label>
-          <input type="password"  id="password" required></input>
+        <div className="password input">
+          <label className="input-label">MOT DE PASSE</label>
+          <input className="input-text" type="password"  id="password" required></input>
         </div>
-        <input type="submit" value="signIn"></input>
+        <button className="input input-submit" type="submit">CONNEXION</button>
       </form>
 
     </div>

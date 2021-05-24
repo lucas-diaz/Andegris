@@ -1,18 +1,53 @@
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin: 10px auto;
+}
+.input-text{
+  width: 100%;
+  height: 2.4rem;
+  border-radius: 25px;
+  margin: 5px 0px;
+  background: rgba(255, 255, 255, 0.678);
+}
+.input-label{
+  align-self: flex-start;
+  margin-left: 10px;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.input-submit{
+  border-radius: 25px;
+  height: 2.4rem;
+  background-color: blue;
+  color: white;
+  margin-top: 30px;
+  padding: 7px;
+
+}
+
 .login{
-  border: 1px red solid;
   width:80%;
 	margin:auto;
-	max-width:500px;
+	max-width:440px;
 	min-height:500px;
-  background-color: rgba(61, 76, 116, 0.9) ;
+  background:
+  linear-gradient(
+    rgba(35,43,85,0.75),
+    rgba(35,43,85,0.95));
+    box-shadow: 1px 0px 7px grey;
+    border-radius: 10px;
 }
 
 .select{
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin: 0px auto;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .select-button{
@@ -20,4 +55,8 @@
   border: none;
   color: white;
   font-size: 1.5rem;
+}
+
+.connect{
+  margin-top: 35px;
 }
