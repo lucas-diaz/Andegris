@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { useEffect } from 'react';
 import { Route } from 'react-router-dom';
 
 // == Import
@@ -11,20 +12,27 @@ import reactLogo from './react-logo.svg';
 import './styles.css';
 
 // == Composant
-const App = () => (
-  <div className="app">
-  <Header />
-    <Route exact path="/">
-      <Home />
-    </Route>
-    <Route exact path="/connexion">
-      <Connect />
-    </Route>
-    <h1>Composant : App</h1>
-    <img src={reactLogo} alt="react logo" />
-    <Counter />
-  </div>
-);
+const App = ( {checkAuth} ) => {
+
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
+  return (
+    <div className="app">
+    <Header />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/connexion">
+        <Connect />
+      </Route>
+      <h1>Composant : App</h1>
+      <img src={reactLogo} alt="react logo" />
+      <Counter />
+    </div>
+  );
+} 
 
 // == Export
 export default App;

@@ -1,4 +1,4 @@
-import { LOGIN_INPUT_CHANGE, LOGIN_SUBMIT } from '../actions/log';
+import { LOGIN_INPUT_CHANGE, LOGIN_SUBMIT, LOGIN_SUCCESS } from '../actions/log';
 
 const initialState = {
   loading: false,
@@ -7,6 +7,9 @@ const initialState = {
     userName:'',
     email: '',
     password:''
+  },
+  userData: {
+
   }
 };
 
@@ -25,6 +28,14 @@ const header = (state = initialState, action = {}) => {
           ...state,
           loading: true,
         };
+        case LOGIN_SUCCESS:
+          
+          return{
+            ...state,
+            userData: {
+              ...action.payload
+            }
+          }
       default:
         return state;
   }
